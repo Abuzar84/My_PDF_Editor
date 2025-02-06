@@ -4,9 +4,15 @@
 body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 header{
     width: 100%;
     background-color: #FF2929;
     text-align: center;
+}
+main{
+    flex: 1;
 }
