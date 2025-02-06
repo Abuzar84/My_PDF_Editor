@@ -20,7 +20,23 @@ main{
 }
 .icon{
     width: 6rem;
+    margin: 2.5%;
 }
 .icon img{
     width: 100%;
+}
+footer{
+    width: 100%;
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+}
+.foot_content{
+    display: flex;
+    width: 100%;  
+}
+.foot_heading,
+.social{
+    margin: 2.5%;
 }
