@@ -18,6 +18,18 @@ main{
     text-align: center;
     flex: 1;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main a{
+    text-decoration: none;
+    color: #000000;
+}
+main a:hover{
+    text-decoration: underline;
+}
 .icon{
     width: 6rem;
     margin: 2.5%;
@@ -29,14 +41,33 @@ footer{
     width: 100%;
     background-color: #000000;
     color: rgb(250, 250, 250);
-    display: flex;
-    justify-content: center;
 }
 .foot_content{
     display: flex;
-    width: 100%;  
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; 
+    padding-top: 2%; 
+}
+.foot_heading{
+    width: 28rem;
+}
+.ab_pr{
+    width: 10rem;
+}
+.social{
+    width: 10rem;
 }
 .foot_heading,
+.ab_pr,
 .social{
-    margin: 2.5%;
+    margin: 1%;
+}
+a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
 }
