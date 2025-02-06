@@ -14,5 +14,13 @@ header{
     text-align: center;
 }
 main{
+    width: 100%;
+    text-align: center;
     flex: 1;
+}
+.icon{
+    width: 6rem;
+}
+.icon img{
+    width: 100%;
 }
