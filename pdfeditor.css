@@ -17,8 +17,6 @@ main{
     width: 100%;
     text-align: center;
     flex: 1;
-}
-.container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -27,15 +25,33 @@ main a{
     text-decoration: none;
     color: #000000;
 }
-main a:hover{
-    text-decoration: underline;
-}
-.icon{
-    width: 6rem;
-    margin: 2.5%;
-}
-.icon img{
+.drop_area{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.drop_area.hover{
+    background-color: #f1f1f1;
+}
+.inputfield{
+    width: 15rem;
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+input{
+    width: 15rem;
+    height: 6rem;
+    text-align: center;
+    margin: auto;
 }
 footer{
     width: 100%;
