@@ -36,11 +36,11 @@ main a{
     margin: auto;
 }
 .drop_area.hover{
-    background-color: #f1f1f1;
+    background-color: #ECE8E5;
 }
 .inputfield{
-    width: 15rem;
-    height: 6rem;
+    width: 25rem;
+    height: 15rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -48,8 +48,8 @@ main a{
     margin: auto;
 }
 input{
-    width: 15rem;
-    height: 6rem;
+    width: 25rem;
+    height: 15rem;
     text-align: center;
     margin: auto;
 }
