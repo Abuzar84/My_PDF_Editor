@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF EDITOR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <link rel="stylesheet" href="pdfeditor.css">
     <link rel="icon" type="image/webp" href="pdfeditor.webp">
 </head>
@@ -22,9 +23,12 @@
     <main>
         <div class="drop_area" id="drop_area">
             <div class="inputfield">
-                <label for="pdf_file" class="pdf_set">Upload Document</label>
+                
+                <label for="pdf_file" class="pdf_set">Upload Document by clicking or <br> 
+                drag and drop</label><br><br>
                 <input type="file" id="file_input" name="SelectPDFFile" accept=".pdf">
-                <span id="file_area"></span>           
+                <canvas id="file_area"></canvas>  
+                <pre id="file_text"></pre>         
             </div>
         </div>
     </main>

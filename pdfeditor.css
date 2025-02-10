@@ -38,19 +38,13 @@ main a{
 .drop_area.hover{
     background-color: #ECE8E5;
 }
-.inputfield{
-    width: 25rem;
-    height: 15rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+input{
+    width: 15rem;
+    height: 6rem;
     margin: auto;
 }
-input{
-    width: 25rem;
-    height: 15rem;
-    text-align: center;
+.file_area{
+    height: 25rem;
     margin: auto;
 }
 footer{
@@ -67,12 +61,15 @@ footer{
 }
 .foot_heading{
     width: 28rem;
+    text-align: center;
 }
 .ab_pr{
     width: 10rem;
+    text-align: center;
 }
 .social{
     width: 10rem;
+    text-align: center;
 }
 .foot_heading,
 .ab_pr,
