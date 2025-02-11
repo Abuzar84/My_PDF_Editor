@@ -51,12 +51,15 @@ footer{
 }
 .foot_heading{
     width: 28rem;
+    text-align: center;
 }
 .ab_pr{
     width: 10rem;
+    text-align: center;
 }
 .social{
     width: 10rem;
+    text-align: center;
 }
 .foot_heading,
 .ab_pr,
