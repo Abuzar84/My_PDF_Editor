@@ -35,6 +35,7 @@ dropArea.addEventListener("drop", (event) => {
         if(file[0].type === "application/pdf"){
             fileName.textContent = fileNameShow;
             fileInput.files = file;
+            return
         }
         fileName.textContent = "Only PDF files are allowed. Please upload a valid PDF.";
     }
