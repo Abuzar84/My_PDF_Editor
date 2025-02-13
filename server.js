@@ -22,6 +22,10 @@ app.post("/upload", upload.single("file"), (req, res) =>{
     res.json({message: "File uploaded successfully", fileurl:`http://localhost:3000/upload/${req.file.filename}`});
 });
 
+app.get("/", (req, res) => {
+    res.send("Welcome to the File Upload Server!");
+});
+
 // server upload file.
 app.use("/upload", express.static("uploads"));
 

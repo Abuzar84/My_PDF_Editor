@@ -25,7 +25,10 @@
             <div class="input_file_area">
                 <h2>Upload your File</h2><br>
                 <span id="file_name"></span><br>
-                <input type="file" accept="application/pdf" id="file_input" class="file_input"/>
+                <form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" accept="application/pdf" id="file_input" class="file_input"/>
+                    <button type="submit">Upload</button>
+                </form>
             </div>
         </div>
     </main>
@@ -56,6 +59,5 @@
         </div>
     </footer>
     <script src="pdfeditor.js"></script>
-    <script src="server.js"></script>
 </body>
 </html>
