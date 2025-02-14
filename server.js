@@ -15,11 +15,11 @@ const storage = multer.diskStorage({
 const upload = multer({storage: storage});
 
 // handle file upload.
-app.post("/upload", upload.single("file"), (req, res) =>{
+app.post("/uploads", upload.single("file"), (req, res) =>{
     if(!req.file){
         return res.status(400).json({message: "No file uploaded" });
     }
-    res.json({message: "File uploaded successfully", fileurl:`http://localhost:3000/upload/${req.file.filename}`});
+    res.json({message: "File uploaded successfully", fileurl:`http://localhost:3000/uploads/${req.file.filename}`});
 });
 
 app.get("/", (req, res) => {
@@ -27,6 +27,6 @@ app.get("/", (req, res) => {
 });
 
 // server upload file.
-app.use("/upload", express.static("uploads"));
+app.use("/uploads", express.static("uploads"));
 
 app.listen(3000, () => console.log("Server running on port 3000"));

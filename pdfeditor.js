@@ -3,6 +3,7 @@ const fileInput = document.getElementById("file_input");
 const fileName = document.getElementById("file_name");
 let fileStoreForserver;
 let file;
+const API_URL = "https://your-username-3000.github.dev"; 
 
 fileInput.addEventListener("change", (event) => {
     event.preventDefault();
