@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Exponent Calculator</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="icon" href="Exponent.webp" type="image/webp">
+        <link rel="stylesheet" href="ExponentCalculator.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+        crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <h1>My Calculator Space</h1>
+            </div>
+            <div class="button_container">
+                <div class="button_content">
+                    <button type="button" onclick="window.location.href='index.html';">Home</button>
+                    <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+                    <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+                    <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+                    <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+                    <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+                    <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="content">
+                    <form><br>
+                        <label for="square&squareroot"><h3>Exponent Calculator</h3></label><br>
+                        <input type="number" placeholder="Enter Number" class="input_number" id="input_number">
+                        <input type="number" placeholder="Enter Exponent" class="input_exponent" id="input_exponent"><br><br>
+                        <input type="reset" class="clear" id="clear" value="Clear">
+                        <input type="button" class="calculate" id="calculate" value="Calculate" onclick="calculateexp()">
+                        <div class="res" id="res"></div>
+                    </form>
+                </div>
+                <div class="paragraph_exponent"><br>
+                    <h2>What is an Exponent?</h2><br>
+                    <p>An <strong>exponent</strong> is a mathematical operation that describes how many times a number, called the 
+                        <strong>base</strong>, is multiplied by itself. It is often represented as a small number written above and to the
+                         right of the base. This small number is called the <strong>exponent</strong> or <strong>power</strong>.</p><br>
+                    <hr><h2>Basic Concept:</h2><br>
+                    <p>For a number <code>a</code> raised to the power of <code>n</code>, denoted as <code>a<sup>n</sup></code>, it means multiplying 
+                        <code>a</code> by itself <code>n</code> times. For example:</p><br>
+                    <p><code>2<sup>3</sup> = 2 × 2 × 2 = 8</code></p><br>
+                    <p>Here, 2 is the base, and 3 is the exponent, meaning 2 is multiplied by itself three times to get 8.</p><br>
+                    <hr>
+                    <h2>Important Exponent Rules:</h2><br>
+                    <ul>
+                        <li><strong>Product of Powers Rule:</strong> When multiplying two powers with the same base, add the exponents:
+                            <br><code>a<sup>m</sup> × a<sup>n</sup> = a<sup>(m+n)</sup></code>
+                        </li><br>
+                        <li><strong>Power of a Power Rule:</strong> When raising a power to another power, multiply the exponents:
+                            <br><code>(a<sup>m</sup>)<sup>n</sup> = a<sup>(m × n)</sup></code>
+                        </li><br>
+                        <li><strong>Quotient of Powers Rule:</strong> When dividing two powers with the same base, subtract the exponents:
+                            <br><code>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>(m-n)</sup></code>
+                        </li><br>
+                        <li><strong>Power of a Product Rule:</strong> When raising a product to a power, apply the exponent to each factor:
+                            <br><code>(a × b)<sup>n</sup> = a<sup>n</sup> × b<sup>n</sup></code>
+                        </li><br>
+                        <li><strong>Zero Exponent Rule:</strong> Any non-zero number raised to the power of zero equals 1:
+                            <br><code>a<sup>0</sup> = 1 (for a ≠ 0)</code>
+                        </li><br>
+                        <li><strong>Negative Exponent Rule:</strong> A negative exponent means taking the reciprocal of the base raised to the positive of that exponent:
+                            <br><code>a<sup>(-n)</sup> = 1 / a<sup>n</sup></code>
+                        </li><br>
+                        <li><strong>Fractional Exponent Rule:</strong> A fractional exponent can be rewritten as a root:
+                            <br><code>a<sup>(m/n)</sup> = √[n]a<sup>m</sup></code>
+                        </li><br>
+                    </ul>
+                    <hr>
+                    <h2>Example Problems:</h2><br>
+                    <ul>
+                        <li><code><sup>4</sup> = 3 × 3 × 3 × 3 = 81</code></li><br>
+                        <li><code>5<sup>(-2)</sup> = 1 / 5<sup>2</sup> = 1 / 25</code></li><br>
+                        <li><code>2<sup>3</sup> × 2<sup>2</sup> = 2<sup>(3+2)</sup> = 2<sup>5</sup> = 32</code></li><br>
+                        <li><code>(4<sup>2</sup>)<sup>3</sup> = 4<sup>(2 × 3)</sup> = 4<sup>6</sup> = 4096</code></li><br>
+                    </ul>
+                    <hr>
+                    <h2>Real-World Applications:</h2><br>
+                    <p>Exponents appear in many fields such as:</p><br>
+                    <ul>
+                        <li><strong>Scientific Notation:</strong> Exponents are used to express very large or small numbers. For example, 
+                            <code>6.022 × 10<sup>23</sup></code> (Avogadro’s number).</li><br>
+                        <li><strong>Computer Science:</strong> Exponents are used in algorithms and in expressing time complexity.</li><br>
+                        <li><strong>Physics:</strong> In exponential growth and decay, like in population models, radioactive decay, or compound
+                        interest.</li><br>
+                    </ul>
+
+                    <p>Understanding exponents is crucial for higher-level mathematics, algebra, calculus, and many applied science disciplines.</p>
+                </div><br>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3>My Calculator Space</h3>
+                    <p>Your reliable tool for everyday calculations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+                    <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+                    <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="ExponentCalculator.js"></script>
+    </body>
+</html>

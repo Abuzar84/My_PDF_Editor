@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Trigonometry</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="icon" href="trignometry.webp" type="image/webp">
+        <link rel="stylesheet" href="trignometry.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+        crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <h1>My Calculator Space</h1>
+            </div>
+            <div class="button_container">
+                <div class="button_content">
+                    <button type="button" onclick="window.location.href='index.html';">Home</button>
+                    <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+                    <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+                    <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+                    <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+                    <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+                    <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+                </div>          
+            </div>
+        </header>
+        <main>
+            <div class="calculator">
+                <h2>Trigonometry Calculator</h2>
+                <hr><br>
+                <div class="input_container">
+                    <label for="angle">Enter Angle:</label>
+                    <input type="number" id="angle" placeholder="e.g., 45">
+                </div><br>
+                <div class="unit-container">
+                    <label>
+                        <input type="radio" name="unit" value="degrees" checked> Degrees
+                    </label>
+                    <label>
+                        <input type="radio" name="unit" value="radians"> Radians
+                    </label>
+                </div>
+                <div class="button-container">
+                    <button onclick="calculateTrig('sin')">Sin</button>
+                    <button onclick="calculateTrig('cos')">Cos</button>
+                    <button onclick="calculateTrig('tan')">Tan</button>
+                    <button onclick="calculateTrig('cosec')">Cosec</button>
+                    <button onclick="calculateTrig('sec')">Sec</button>
+                    <button onclick="calculateTrig('cot')">Cot</button>
+                </div>
+                <div class="result">
+                    <h3>Result:</h3>
+                    <p id="result">-</p>
+                </div>
+            </div>
+            <div class="paragraph_for_trig"><br>      
+            <section>
+                <h2>The Six Trigonometric Functions:</h2><br>
+                <ol>
+                    <li><strong>Sine (sin):</strong> In a right triangle, the sine of an angle is the ratio of the length of the opposite side to the length of the hypotenuse.  
+                        <code>sin(θ) = opposite / hypotenuse</code>
+                    </li><br>
+                    <li><strong>Cosine (cos):</strong> In a right triangle, the cosine of an angle is the ratio of the length of the adjacent side to the length of the hypotenuse.  
+                        <code>cos(θ) = adjacent / hypotenuse</code>
+                    </li><br>
+                    <li><strong>Tangent (tan):</strong> The tangent of an angle is the ratio of the sine to the cosine, or equivalently, the ratio of the opposite side to the adjacent side.  
+                        <code>tan(θ) = opposite / adjacent = sin(θ) / cos(θ)</code>
+                    </li><br>
+                    <li><strong>Cosecant (csc):</strong> The cosecant is the reciprocal of the sine function.  
+                        <code>csc(θ) = 1 / sin(θ)</code>
+                    </li><br>
+                    <li><strong>Secant (sec):</strong> The secant is the reciprocal of the cosine function.  
+                        <code>sec(θ) = 1 / cos(θ)</code>
+                    </li><br>
+                    <li><strong>Cotangent (cot):</strong> The cotangent is the reciprocal of the tangent function or the ratio of the cosine to the sine.  
+                        <code>cot(θ) = 1 / tan(θ) = cos(θ) / sin(θ)</code>
+                    </li><br>
+                </ol>
+            </section>
+            <hr>
+            <section class="formula"> 
+                <h2>Relationship Between Functions:</h2><br>
+                <ul>
+                    <li><strong>Reciprocal Relations:</strong><br>
+                        <ul>
+                            <li><code>csc(θ) = 1 / sin(θ)</code></li><br>
+                            <li><code>sec(θ) = 1 / cos(θ)</code></li><br>
+                            <li><code>cot(θ) = 1 / tan(θ)</code></li><br>
+                        </ul>
+                    </li>
+                    <li><strong>Quotient Relations:</strong><br>
+                        <ul>
+                            <li><code>tan(θ) = sin(θ) / cos(θ)</code></li><br>
+                            <li><code>cot(θ) = cos(θ) / sin(θ)</code></li><br>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>The Unit Circle and Trigonometric Functions:</h2><br>
+                <p>In the unit circle (a circle with a radius of 1 centered at the origin), the trigonometric functions are defined for all 
+                    real angles, not just those in a right triangle. For an angle <code>θ</code> measured from the positive x-axis:</p><br>
+                <ul>
+                    <li>The <strong>x-coordinate</strong> of the point on the unit circle gives <code>cos(θ)</code>.</li><br>
+                    <li>The <strong>y-coordinate</strong> of the point on the unit circle gives <code>sin(θ)</code>.</li><br>
+                    <li>The tangent of the angle is the ratio of the y-coordinate to the x-coordinate.</li><br>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Trigonometric Graphs:</h2><br>
+                <ul>
+                    <li><strong>Sine and Cosine</strong> functions are periodic with a period of <code>2π</code> radians (360°).</li><br>
+                    <li><strong>Tangent and Cotangent</strong> functions have a period of <code>π</code> radians (180°) and exhibit vertical 
+                        asymptotes where the denominator (cosine for tangent, sine for cotangent) is zero.</li><br>
+                    <li><strong>Secant and Cosecant</strong> functions have vertical asymptotes where their reciprocal functions 
+                        (cosine and sine, respectively) are zero.</li><br>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Applications of Trigonometric Functions:</h2><br>
+                <ul>
+                    <li><strong>Angle and Distance Calculation:</strong> Used in physics, engineering, and navigation to compute angles and distances.</li><br>
+                    <li><strong>Modeling Waveforms:</strong> Trigonometric functions model periodic behavior, such as sound waves, light waves, 
+                        and alternating current (AC) circuits.</li><br>
+                    <li><strong>Geometry and Architecture:</strong> Used for calculating angles, slopes, and designing structures.</li><br>
+                    <li><strong>Astronomy:</strong> To calculate the positions of stars, planets, and other celestial objects.</li><br>
+                </ul>
+            </section>
+            <hr>
+            <section class="formula">
+                <h2>Key Trigonometric Identities:</h2><br>
+                <ul>
+                    <li><strong>Pythagorean Identity:</strong> <code>sin²(θ) + cos²(θ) = 1</code></li><br>
+                    <li><strong>Reciprocal Identities:</strong><br>
+                        <ul>
+                            <li><code>csc(θ) = 1 / sin(θ)</code></li><br>
+                            <li><code>sec(θ) = 1 / cos(θ)</code></li><br>
+                            <li><code>cot(θ) = 1 / tan(θ)</code></li><br>
+                        </ul>
+                    </li>
+                    <li><strong>Quotient Identities:</strong><br>
+                        <ul>
+                            <li><code>tan(θ) = sin(θ) / cos(θ)</code></li><br>
+                            <li><code>cot(θ) = cos(θ) / sin(θ)</code></li><br>
+                        </ul>
+                    </li>
+                    <li><strong>Sum and Difference Identities:</strong><br>
+                        <ul>
+                            <li><code>sin(a ± b) = sin(a)cos(b) ± cos(a)sin(b)</code></li><br>
+                            <li><code>cos(a ± b) = cos(a)cos(b) ∓ sin(a)sin(b)</code></li><br>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3>My Calculator Space</h3>
+                    <p>Your reliable tool for everyday calculations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+                    <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+                    <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Load external JavaScript -->
+        <script src="trignometry.js"></script>
+        
+    </body>
+
+</html>

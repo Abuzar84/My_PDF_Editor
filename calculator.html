@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+	    <link rel="icon" href="calculator.png" type="image/png">
+        <link rel="stylesheet" href="calculator.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>My Calculator Space</h1>
+            </div>
+            <div class="button_container">
+                <div class="button_content">
+                    <button type="button" onclick="window.location.href='index.html';">Home</button>
+                    <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+                    <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+                    <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+                    <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+                    <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+                    <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+                </div>
+            </div>
+        </header>
+        <main><br>
+            <div class="calc_area">              
+		        <div class="input_container">
+                    <input type="text" class="input_pick" id="input_pick" readonly>
+                    <div class="answer" id="answer"></div>
+                </div>
+                <div class="input_button" id="input_button">
+                    <div style="display: flex; width: 100%;">        
+                        <div class="row_cbe"><input type="button" value="Clear" onclick="clearinput()"></div>
+                        <div class="row_cbe"><input type="button" value="Back Space" onclick="clearlast()"></div>                        
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div class="row"><input type="button" value="7" onclick="insertvalue('7')"></div>
+                        <div class="row"><input type="button" value="8" onclick="insertvalue('8')"></div>
+                        <div class="row"><input type="button" value="9" onclick="insertvalue('9')"></div>
+                        <div class="row"><input type="button" value="/" onclick="insertvalue('/')"></div>
+                    </div>
+                    <div style="display: flex; width: 100%;">                    
+                        <div class="row"><input type="button" value="4" onclick="insertvalue('4')"></div>
+                        <div class="row"><input type="button" value="5" onclick="insertvalue('5')"></div>
+                        <div class="row"><input type="button" value="6" onclick="insertvalue('6')"></div>
+                        <div class="row"><input type="button" value="&times;" onclick="insertvalue('*')"></div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div class="row"><input type="button" value="3" onclick="insertvalue('3')"></div>
+                        <div class="row"><input type="button" value="2" onclick="insertvalue('2')"></div>
+                        <div class="row"><input type="button" value="1" onclick="insertvalue('1')"></div>
+                        <div class="row"><input type="button" value="-" onclick="insertvalue('-')"></div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div class="row"><input type="button" value="0" onclick="insertvalue('0')"></div>
+                        <div class="row"><input type="button" value="•" onclick="insertvalue('.')"></div>
+                        <div class="row"><input type="button" value="%" onclick="insertvalue('%')"></div>
+                        <div class="row"><input type="button" value="+" onclick="insertvalue('+')"></div>
+                    </div>    
+                </div>
+            </div>
+            <div class="paragraph_basic_calc">
+                <br>
+                <h2>Calculator: An Overview</h2>
+                <br>
+                <p>
+                    A <strong>calculator</strong> is an electronic or mechanical device designed to perform mathematical operations. 
+                   From simple arithmetic like addition, subtraction, multiplication, and division, to more complex functions involving
+                    square roots, logarithms, trigonometry, and even calculus, calculators have become an essential tool in both 
+                    everyday life and specialized fields such as engineering, finance, and science.
+                </p>
+                <br><hr>
+                <h3>Types of Calculators</h3>
+                <br>
+                <h4>1. Basic Calculators</h4>
+                <br>
+                <p>
+                    These perform fundamental arithmetic operations addition, subtraction, multiplication, and division. They usually 
+                    have a small display and a set of 10 to 20 keys. Commonly used for quick calculations at home or in school settings.
+                </p>
+                <br>
+                <h4>2. Scientific Calculators</h4>
+                <br>
+                <p>
+                    These are designed to handle more advanced mathematical functions like trigonometric, logarithmic, and exponential 
+                    operations. Often used by students and professionals in fields such as physics, engineering, and mathematics. 
+                    Includes functions like sine, cosine, tangent, square roots, and powers.
+                </p>
+                <br>
+                <h4>3. Graphing Calculators</h4>
+                <br>
+                <p>
+                    These allow users to plot graphs of functions and solve equations involving multiple variables. Popular in higher
+                    education, especially for courses in mathematics, physics, and engineering. Some models also support programming,
+                    making them versatile tools for advanced problem-solving.
+                </p>
+                <br>
+                <h4>4. Financial Calculators</h4>
+                <br>
+                <p>
+                    Specifically designed for solving financial and business-related calculations like interest rates, loan payments,
+                    amortization schedules, and investments. They are commonly used in accounting, finance, and real estate sectors.
+                </p>
+                <br>
+                <h4>5. Programming Calculators</h4>
+                <br>
+                <p>
+                    These can be programmed to perform a series of custom functions and are often used by engineers, mathematicians, or 
+                    in specific industries requiring repetitive or specialized calculations.
+                </p>
+                <br>
+                <h4>6. Online and Mobile Calculators</h4>
+                <br>
+                <p>
+                    Software-based calculators are available on virtually every smartphone, tablet, and computer. Many modern
+                    smartphones have built-in calculators that often include both basic and scientific functions. Additionally, 
+                    there are apps for more complex needs, such as graphing or programming calculators.
+                </p>
+                <br><hr>
+                <h3>History and Development</h3>
+                <br>
+                <h4>Early Calculating Devices</h4>
+                <br>
+                <p>
+                    The concept of calculation tools dates back thousands of years. Ancient devices such as the abacus were used by 
+                    early civilizations for basic arithmetic. Later, the mechanical calculator was invented in the 17th century by
+                    figures like Blaise Pascal and Gottfried Wilhelm Leibniz. These devices were the precursors to the more 
+                    sophisticated calculators we have today.
+                </p>
+                <br>
+                <h4>Electronic Calculators</h4>
+                <br>
+                <p>
+                    The first electronic calculators appeared in the mid-20th century. In the 1960s, the advent of semiconductor 
+                    technology allowed for the development of portable electronic calculators, which were smaller, faster, and more 
+                    accurate than their mechanical predecessors. The invention of the integrated circuit (IC) in the 1960s
+                    revolutionized the design of calculators, making them cheaper to produce and more reliable. In the 1970s, 
+                    companies like Texas Instruments and Hewlett-Packard began producing the first commercially successful
+                    pocket-sized calculators.
+                </p>
+                <br>
+                <h4>Modern Calculators</h4>
+                <br>
+                <p>
+                    Today, calculators are widely available, both as physical devices and software on computers, smartphones, and 
+                    other devices. Many of them are highly specialized for different fields, and their functions have expanded to 
+                    include statistical analysis, matrix operations, and even symbolic computation.
+                </p>
+                <br><hr>
+                <h3>Importance and Uses</h3>
+                <br>
+                <h4>1. Education</h4>
+                <br>
+                <p>
+                    Calculators are essential in modern education, helping students perform complex calculations quickly and 
+                    efficiently. They are particularly useful in high school and university courses in mathematics, physics, and 
+                    engineering.
+                </p>
+                <br>
+                <h4>2. Business and Finance</h4>
+                <br>
+                <p>
+                    Calculators are used for accounting, budgeting, financial analysis, and tax computations. They can help 
+                    business owners and accountants perform cost analysis, profitability calculations, and investment appraisals.
+                </p>
+                <br>
+                <h4>3. Science and Engineering</h4>
+                <br>
+                <p>
+                    Scientists and engineers use calculators to solve complex equations, model data, and perform simulations. In many 
+                    cases, advanced calculators are equipped with the ability to handle variables, matrices, and calculus operations.
+                </p>
+                <br>
+                <h4>4. Everyday Use</h4>
+                <br>
+                <p>
+                    Most people rely on calculators for personal finance (e.g., calculating shopping totals, bills, or budgeting) 
+                    and for general arithmetic in daily life. Modern smartphones have built-in calculators for these purposes.
+                </p>
+                <br><hr>
+                <h3>Impact on Society</h3>
+                <br>
+                <p>
+                    The calculator has had a profound impact on society by simplifying complex calculations and making them
+                    accessible to a wider audience. In the past, only those with formal education in mathematics had the tools 
+                    necessary to perform advanced computations. Today, anyone with a basic calculator (or access to one through their 
+                    phone or computer) can solve complex problems quickly.
+                </p>
+                <br>
+                <p>
+                    Moreover, calculators have played a significant role in enabling advances in fields such as engineering, medicine, 
+                    and technology. The ability to handle large numbers and perform rapid calculations is critical to advancements in 
+                    areas like cryptography, data science, and artificial intelligence.
+                </p>
+                <br><hr>
+                <h3>Conclusion</h3>
+                <br>
+                <p>
+                    The calculator has evolved from a mechanical tool for basic arithmetic to a sophisticated device that can 
+                    perform complex mathematical and scientific functions. It remains a vital instrument in education, business, 
+                    science, and daily life. Whether it's a simple hand-held device or a powerful graphing calculator with the 
+                    capability to handle advanced functions, the calculator continues to be an indispensable tool in modern society.
+                </p>
+                <br>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3>My Calculator Space</h3>
+                    <p>Your reliable tool for everyday calculations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+                    <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+                    <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+        <script src="calculator.js"></script>
+    </body>
+</html>

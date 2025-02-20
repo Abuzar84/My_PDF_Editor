@@ -1,0 +1,347 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Surface Area Calculator</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="icon" href="surfacearea.webp" type="image/webp">
+        <link rel="stylesheet" href="surfacearea.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+        crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <h1>My Calculator Space</h1>
+            </div>
+            <div class="button_container">
+                <div class="button_content">
+                    <button type="button" onclick="window.location.href='index.html';">Home</button>
+                    <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+                    <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+                    <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+                    <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+                    <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+                    <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="surface_area_container">
+                <div class="calc_area">
+                    <form name="ball_surface">
+                        <label for="ball"><strong>Ball (Sphere) Surface Area</strong></label><br><br>
+                        <input type="number" class="ball" id="ball" placeholder="Enter Radius of Ball">
+                        <select name="unit_ball" id="unit_select_for_ball">
+                            <option value="m" id="meter" selected>meter</option>
+                            <option value="m" id="millimeter">millimeter</option>
+                            <option value="km" id="kilometer">kilometer </option>
+                            <option value="cm" id="cm">cm</option>
+                            <option value="in" id="inch">inch</option>
+                            <option value="ft" id="foot">foot</option>
+                            <option value="yd" id="yard">yard</option>
+                            <option value="mi" id="mile">mile</option>
+                        </select><br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="surfaceball()">
+                        <div id="res_area_ball"></div>
+                    </form>
+                    <form name="cylindrical">
+                        <label for="cylinder"><strong>Cylinder Surface Area</strong></label><br><br>
+                        <input type="number" class="cylinder_r_value" id="cylinder_r_value" placeholder="Enter Radius"><br>
+                        <input type="number" class="cylinder_h_value" id="cylinder_h_value" placeholder="Enter Height"><br>
+                        <strong>Select Unit</strong>
+                        <select name="unit_cylinder" id="unit_select_for_cylinder">
+                            <option value="m" id="meter_cylinder" selected>meter</option>
+                            <option value="m" id="millimeter_cylinder">millimeter</option>
+                            <option value="km" id="kilometer_cylinder">kilometer </option>
+                            <option value="cm" id="cm_cylinder">cm</option>
+                            <option value="in" id="inch_cylinder">inch</option>
+                            <option value="ft" id="foot_cylinder">foot</option>
+                            <option value="yd" id="yard_cylinder">yard</option>
+                            <option value="mi" id="mile_cylinder">mile</option>
+                        </select><br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="surfacecylinder()">
+                        <div id="res_area_cylinder"></div>
+                    </form>
+                    <form name="hemisphere">
+                        <label for="hamisphere_area"><strong>Hemisphere Surface Area</strong></label><br><br>
+                        <input type="number" class="hemi_r" id="hemi_r" placeholder="Enter Radius of Hemisphere">
+                        <select name="unit_hemisphere" id="unit_select_hemisphere">
+                            <option value="m" id="meter_hemisphere" selected>meter</option>
+                            <option value="m" id="millimeter_hemisphere">millimeter</option>
+                            <option value="km" id="kilometer_hemisphere">kilometer </option>
+                            <option value="cm" id="cm_hemisphere">cm</option>
+                            <option value="in" id="inch_hemisphere">inch</option>
+                            <option value="ft" id="foot_hemisphere">foot</option>
+                            <option value="yd" id="yard_hemisphere">yard</option>
+                            <option value="mi" id="mile_hemisphere">mile</option>
+                        </select><br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="surfacehemisphere()">
+                        <div id="res_area_hemisphere"></div>
+                    </form>
+                    <form name="cone">
+                        <label for="cone_area"><strong>Cone Surface Area</strong></label><br><br>
+                        <input type="number" class="cone_r" id="cone_r" placeholder="Enter Radius of cone"><br>
+                        <input type="number" class="cone_h" id="cone_h" placeholder="Enter Height of cone"><br>
+                        <strong>Select unit</strong>
+                        <select name="unit_cone" id="unit_select_cone">
+                            <option value="m" id="meter_cone" selected>meter</option>
+                            <option value="m" id="millimeter_cone">millimeter</option>
+                            <option value="km" id="kilometer_cone">kilometer </option>
+                            <option value="cm" id="cm_cone">cm</option>
+                            <option value="in" id="inch_cone">inch</option>
+                            <option value="ft" id="foot_cone">foot</option>
+                            <option value="yd" id="yard_cone">yard</option>
+                            <option value="mi" id="mile_cone">mile</option>
+                        </select>
+                        <br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="surfacecone()">
+                        <div class="res_area_cone" id="res_area_cone"></div>
+                    </form>
+                    <form name="cube">
+                        <label for="cube"><strong>Cube Surface Area</strong></label><br><br>
+                        <input type="number" class="cube_a" id="cube_a" placeholder="Enter Length of a side">
+                        <select name="unit_cube" id="unit_select_for_cube">
+                            <option value="m" id="meter_cube" selected>meter</option>
+                            <option value="m" id="millimeter_cube">millimeter</option>
+                            <option value="km" id="kilometer_cube">kilometer </option>
+                            <option value="cm" id="cm_cube">cm</option>
+                            <option value="in" id="inch_cube">inch</option>
+                            <option value="ft" id="foot_cube">foot</option>
+                            <option value="yd" id="yard_cube">yard</option>
+                            <option value="mi" id="mile_cube">mile</option>
+                        </select><br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="surfacecube()">
+                        <div id="res_area_cube"></div>
+                    </form>
+                    <form name="cuboid">
+                        <label for="cuboid_area"><strong>Cuboid (Rectangular Prism) Surface Area</strong></label><br><br>
+                        <input type="number" class="cuboid_l" id="cuboid_l" placeholder="Enter Length"><br>
+                        <input type="number" class="cuboid_w" id="cuboid_w" placeholder="Enter Width"><br>
+                        <input type="number" class="cuboid_h" id="cuboid_h" placeholder="Enter Height"><br>
+                        <strong>Select unit</strong>
+                        <select name="unit_cuboid" id="unit_select_cuboid">
+                            <option value="m" id="meter_cuboid" selected>meter</option>
+                            <option value="m" id="millimeter_cuboid">millimeter</option>
+                            <option value="km" id="kilometer_cuboid">kilometer </option>
+                            <option value="cm" id="cm_cuboid">cm</option>
+                            <option value="in" id="inch_cuboid">inch</option>
+                            <option value="ft" id="foot_cuboid">foot</option>
+                            <option value="yd" id="yard_cuboid">yard</option>
+                            <option value="mi" id="mile_cuboid">mile</option>
+                        </select>
+                        <br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="surfacecuboid()">
+                        <div class="res_area_cuboid" id="res_area_cuboid"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="para_surf">
+                <h2>Surface Area: Definition and Types</h2><br>
+                <p>
+                    Surface Area is the total area that covers the outer surface of a 3D object. It is
+                    classified into two main types based on the structure of the object:
+                </p><br><hr>
+                <h3>Types of Surface Area</h3><br>
+                <p>
+                    <strong>1. Curved Surface Area (CSA):</strong><br><br>
+                    • Refers to the area of only the curved surface of an object. <br>
+                    • Applicable to shapes like cylinders, cones, hemispheres, and spheres. <br>
+                    • Excludes any flat surfaces (like the bases of a cylinder or cone). <br>
+                </p><br>
+                <p>
+                    <strong>2. Total Surface Area (TSA):</strong><br><br>
+                    • Refers to the total area of all the surfaces (both curved and flat) of an object. <br>
+                    • It is the sum of the curved surface area and the area of the flat surfaces (if any). <br>
+                </p><br>
+                <p>
+                    <strong>3. Lateral Surface Area (LSA):</strong><br><br>
+                    • Refers to the area of all the vertical sides of an object, excluding the top and bottom faces. <br>
+                    • Typically used for prisms, cubes, and cuboids. <br>
+                </p><br><hr>
+                <h3>Surface Area Formulas for Different Shapes</h3><br>
+                <P>
+                    <strong>1. Sphere</strong><br><br>
+                    • <strong>Description:</strong>A perfectly round 3D shape where all points on the surface are equidistant from the center. <br>
+                    • <strong>Curved Surface Area (CSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>CSA = 4π<i>r</i><sup>2</sup></strong>
+                    </div><br>
+                    &ensp;&ensp; • As the sphere has no flat surfaces, CSA and TSA are the same. <br>
+                    <strong>• Total Surface Area (TSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>TSA = 4π<i>r</i><sup>2</sup></strong>
+                    </div><br>
+                </P><br><hr>
+                <p>
+                    <strong>2. Cylinder</strong><br><br>
+                    <strong>• Description:</strong>A 3D shape with two parallel circular bases connected by a curved surface <br>
+                    <strong>• Curved Surface Area (CSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>CSA = 2π<i>r</i><i>h</i></strong>
+                    </div><br>
+                    &ensp;&ensp; • Includes only the curved lateral surface.<br>
+                    <strong>• Total Surface Area (TSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>TSA = 2π<i>r</i><sup>2</sup> + 2π<i>r</i><i>h</i></strong>
+                    </div><br>
+                    &ensp;&ensp; • Includes the CSA and the areas of the two circular bases. <br>
+                </p><br><hr>
+                <p>
+                    <strong>3. Hemisphere</strong><br><br>
+                    <strong>• Description:</strong> Half of a sphere with a flat circular base. <br>
+                    <strong>• Curved Surface Area (CSA):</strong><br> <br>
+                    <div class="formula">
+                        <strong>CSA = 2π<i>r</i><sup>2</sup></strong>
+                    </div><br><br>
+                    &ensp;&ensp; • Covers only the curved portion. <br>
+                    <strong>• Total Surface Area (TSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>TSA = 3π<i>r</i><sup>2</sup></strong>
+                    </div><br><br>
+                    &ensp;&ensp; • Includes the CSA and the flat circular base. <br>
+                </p><br><hr>
+                <p>
+                    <strong>4. Cone</strong><br><br>
+                    <strong>• Description:</strong> A solid with a circular base and a curved surface tapering to a single point (vertex). <br>
+                    <strong>• Curved Surface Area (CSA):</strong> <br><br>
+                    <div class="formula">
+                        <strong>CSA = π<i>r</i><i>l</i></strong>
+                    </div><br><br>
+                    &ensp;&ensp; • Includes only the slant surface. <br>
+                    <strong>• Total Surface Area (TSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>TSA = π<i>r</i><sup>2</sup> + π<i>r</i><i>l</i></strong>
+                    </div><br><br>
+                    &ensp;&ensp; • Includes the CSA and the circular base area. <br>
+                    &ensp;&ensp; •<strong> <i>l</i> = √(r<sup>2</sup> + h<sup>2</sup>)</strong>: Slant height. <br>  
+                </p><br><hr>
+                <p>
+                    <strong>5. Cube</strong><br><br>
+                    <strong>• Description:</strong> A solid with six equal square faces. <br>
+                    <strong>• Lateral Surface Area (LSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>LSA = 4<i>a</i><sup>2</sup></strong><br><br>
+                    </div><br>
+                    &ensp;&ensp; • Includes only the four vertical faces. <br>
+                    <strong>• Total Surface Area (TSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>TSA = 6<i>a</i><sup>2</sup></strong><br><br>
+                    </div><br>
+                    &ensp;&ensp; • Includes all six faces. <br>
+                </p><br><hr>
+                <p>
+                    <strong>6. Cuboid</strong><br><br>
+                    <strong>• Description:</strong> A solid with six rectangular faces, where opposite faces are equal. <br>
+                    <strong>• Lateral Surface Area (LSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>LSA = 2<i>h</i>(<i>l</i> + <i>w</i>)</strong><br><br>
+                    </div><br>
+                    &ensp;&ensp; • Includes the four vertical faces, excluding the top and bottom. <br>
+                    <strong>• Total Surface Area (TSA):</strong><br><br>
+                    <div class="formula">
+                        <strong>TSA = 2(<i>l</i><i>w</i> + <i>w</i><i>h</i> + <i>h</i><i>l</i>)</strong><br><br>
+                    </div><br>
+                    &ensp;&ensp; • Includes all six rectangular faces. <br>
+                </p><br><hr>
+                <h3>Summary Table of Surface Areas</h3><br>
+                <div class="table_div">
+                    <table border="1" style="display: inline-block;">
+                        <tr>
+                            <th>Shape</th>
+                            <th>&ensp;CSA Formula&ensp;</th>
+                            <th>&ensp;TSA Formula&ensp;</th>
+                            <th>&ensp;LSA Formula (if applicable)&ensp;</th>
+                        </tr>
+                        <tr>
+                            <td>Sphere</td>
+                            <td><strong>4π<i>r</i><sup>2</sup></strong></td>
+                            <td><strong>4π<i>r</i><sup>2</sup></strong></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Cylinder</td>
+                            <td><strong>2π<i>r</i><i>h</i></strong></td>
+                            <td><strong>2π<i>r</i><sup>2</sup> + 2π<i>r</i><i>h</i></strong></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>&ensp;Hemisphere&ensp;</td>
+                            <td><strong>2π<i>r</i><sup>2</sup></strong></td>
+                            <td><strong>3π<i>r</i><sup>2</sup></strong></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Cone</td>
+                            <td><strong>π<i>r</i><i>l</i></strong></td>
+                            <td><strong>π<i>r</i><sup>2</sup> + π<i>r</i><i>l</i></strong></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Cube</td>
+                            <td><strong>-</strong></td>
+                            <td><strong>6<i>a</i><sup>2</sup></strong></td>
+                            <td><strong>4<i>a</i><sup>2</sup></strong></td>
+                        </tr>
+                        <tr>
+                            <td>Cuboid</td>
+                            <td><strong>-</strong></td>
+                            <td><strong>2(<i>l</i><i>w + <i>w</i><i>h + <i>h</i><i>l</i>)</strong></td>
+                            <td><strong>2<i>h(<i>l</i> + <i>w</i>)</i></strong></td>
+                        </tr>
+                    </table>
+                </div><br><hr>
+                <p>
+                    <strong>Key Notes</strong><br><br>
+                    <strong>• Curved Surface Area</strong> is relevant only for shapes with curved surfaces. <br>
+                    <strong>• Total Surface Area</strong> includes all the surfaces of a shape, curved and flat. <br>
+                    <strong>•</strong> For <strong>cube</strong> and <strong>cuboid</strong>, only <strong>TSA</strong> and  
+                    <strong>LSA</strong>are applicable since they have no curved surfaces. <br>
+                </p><br>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3>My Calculator Space</h3>
+                    <p>Your reliable tool for everyday calculations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+                    <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+                    <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="surfacearea.js"></script>        
+    </body>
+
+</html>

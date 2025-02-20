@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header{
+    background-color: red;
+    width: 100%;
+    height: auto;
+}
+.heading{
+    line-height: 3em;
+}
+.button_container{
+    background-color: yellow;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+.button_content{
+    width: 100%;
+    margin: auto;
+}
+button{
+    border-color: #222;
+    border: solid;
+    margin: 0;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    flex: 1;
+}
+
+.surface_area_container{
+    width: 100%;
+}
+.calc_area{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+form[name="ball_surface"], 
+form[name="cylindrical"], 
+form[name="hemisphere"], 
+form[name="cone"],
+form[name="cube"],
+form[name="cuboid"]{
+    width: 300px;
+    border: solid;
+    margin: 1%;
+}
+input{
+    width: fit-content;
+}
+.para_surf{
+    width: 100%;
+    text-align: left;
+}
+.table_div{
+    width: 100%;
+    text-align: center;
+}
+.para_surf h2,.para_surf h3, .formula{
+    text-align: center;
+}
+.para_surf table{
+    text-align: center;
+    border-spacing: 0;
+}
+.para_surf th{
+    background-color: rgb(197, 195, 195);
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-content, .footer-links, .footer-social {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+.footer-content h3, .footer-links h4, .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.footer-social a:hover img {
+    filter: brightness(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}

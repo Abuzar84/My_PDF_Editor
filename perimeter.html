@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter Calculator</title>
+    <link rel="icon" href="perimeter.webp" type="image/webp">
+    <link rel="stylesheet" href="perimeter.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+     crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="heading">
+        <h1>My Calculator Space</h1>
+    </div>
+    <div class="button_container">
+        <div class="button_content">
+            <button type="button" onclick="window.location.href='index.html';">Home</button>
+            <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+            <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+            <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+            <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+            <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+            <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+            <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="calc_area_peri">
+        <div class="calc_peri">
+            <form name="circle">
+                <label for="circle"><strong>Circle Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="circle_r" placeholder="enter circle radius">
+                <select name="unit_circle" id="unit_circle_select">
+                    <option value="m" id="meter" selected>meter</option>
+                    <option value="m" id="millimeter">millimeter</option>
+                    <option value="km" id="kilometer">kilometer </option>
+                    <option value="cm" id="cm">cm</option>
+                    <option value="in" id="inch">inch</option>
+                    <option value="ft" id="foot">foot</option>
+                    <option value="yd" id="yard">yard</option>
+                    <option value="mi" id="mile">mile</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="circlePer()">
+                <div class="res_per_cir" id="res_per_cir"></div>
+            </form>
+            <form name="square">
+                <label for="square"><strong>Square Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="square" placeholder="enter value">
+                <select name="unit_square" id="unit_square_select">
+                    <option value="m" id="meter_square" selected>meter</option>
+                    <option value="m" id="millimeter_square">millimeter</option>
+                    <option value="km" id="kilometer_square">kilometer </option>
+                    <option value="cm" id="cm_square">cm</option>
+                    <option value="in" id="inch_square">inch</option>
+                    <option value="ft" id="foot_square">foot</option>
+                    <option value="yd" id="yard_square">yard</option>
+                    <option value="mi" id="mile_square">mile</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="squarePer()">
+                <div class="res_per_sqr" id="res_per_sqr"></div>
+            </form>
+            <form name="rectangle">
+                <label for="rectangle"><strong>Rectangle  Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="rectangle_l" placeholder="enter value length">
+                <input type="number" id="rectangle_w" placeholder="enter value width">
+                <br><br>
+                <strong>Select Unit</strong>
+                <select name="unit_rectangle" id="unit_rectangle_select">
+                    <option value="m" id="meter_rectangle" selected>meter</option>
+                    <option value="m" id="millimeter_rectangle">millimeter</option>
+                    <option value="km" id="kilometer_rectangle">kilometer </option>
+                    <option value="cm" id="cm_rectangle">cm</option>
+                    <option value="in" id="inch_rectangle">inch</option>
+                    <option value="ft" id="foot_rectangle">foot</option>
+                    <option value="yd" id="yard_rectangle">yard</option>
+                    <option value="mi" id="mile_rectangle">mile</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="rectanglePer()">
+                <div class="res_per_rec" id="res_per_rec"></div>
+            </form>
+            <form name="triangle">
+                <label for="triangle"><strong>Triangle  Perimeter Calculator</strong></label><br><br>
+                <input type="number" id="triangle_a" placeholder="enter a value ">
+                <input type="number" id="triangle_b" placeholder="enter b value">
+                <input type="number" id="triangle_c" placeholder="enter c value">
+                <br><br>
+                <strong>Select Unit</strong>
+                <select name="unit_triangle" id="unit_triangle_select">
+                    <option value="m" id="meter_triangle" selected>meter</option>
+                    <option value="m" id="millimeter_triangle">millimeter</option>
+                    <option value="km" id="kilometer_triangle">kilometer </option>
+                    <option value="cm" id="cm_triangle">cm</option>
+                    <option value="in" id="inch_triangle">inch</option>
+                    <option value="ft" id="foot_triangle">foot</option>
+                    <option value="yd" id="yard_triangle">yard</option>
+                    <option value="mi" id="mile_triangle">mile</option>
+                </select><br><br>
+                <input type="reset" value="Clear">
+                <input type="button" value="Calculate" onclick="trianglePer()">
+                <div class="res_per_tri" id="res_per_tri"></div>
+            </form>
+        </div>
+    </div>
+    <div class="para_peri">
+        <h1>What is Perimeter?</h1><br>
+        <p>
+            <strong>Perimeter</strong> is the total length of the boundary of a closed shape. It is found by
+            adding up the lengths of all the sides of the shape. In simple terms, if you walk around the edge of a shape and measure the distance
+            you covered, that distance is the perimeter.
+        </p><br><hr>
+        <p>
+            <strong>1. Perimeter of a Circle (Circumference)</strong><br><br>
+            • The perimeter of a circle is called its <strong>circumference.</strong><br>
+            <strong>• Formula:</strong><br><br>
+            <div class="formula">
+                <strong><i>C</i> = 2π<i>r</i></strong><br><br>
+                or
+                <br><br>
+                <strong><i>C</i> = π<i>d</i></strong><br><br>
+            </div>
+            where: <br><br>
+            • <i>C</i> = circumference <br>
+            • <i>r</i> = radius of the circle <br>
+            • <i>d</i> = diameter of the circle <br>
+        </p><br><hr>
+        <p>
+            <strong>2. Perimeter of a Square</strong><br><br>
+            • A square has four equal sides. <br>
+            <strong>• Formula:</strong><br><br>
+            <div class="formula">
+                <strong><i>P</i> = 4<i>s</i><br><br></strong>
+            </div>
+            where: <br><br>
+            • <i>P</i> = perimeter <br>
+            • <i>s</i> =  length of one side <br>
+        </p><br><hr>
+        <p>
+            <strong>3. Perimeter of a Rectangle</strong><br><br>
+            • A rectangle has two pairs of equal opposite sides. <br>
+            <strong>• Formula:</strong><br><br>
+            <div class="formula">
+                <strong><i>P</i> = 2(<i>l</i> + <i>w</i>)</strong>
+            </div><br>
+            where: <br><br>
+            • <i>P</i> = perimeter <br>
+            • <i>l</i> = length <br>
+            • <i>w</i> =width <br>          
+        </p><br><hr>
+        <p>
+            <strong>4. Perimeter of a Triangle</strong><br><br>
+            • The perimeter of a triangle is the sum of its three sides. <br>
+            <strong>• Formula:</strong><br><br>
+            <div class="formula">
+                <strong><i>P</i> = <i>a</i> + <i>b</i> + <i>c</i></strong>
+            </div><br>
+            where: <br>
+            • <i>P</i> =perimeter <br>
+            • <i>a,b,c</i> = lengths of the three sides <br><br>
+            For an <strong>equilateral triangle</strong> (all sides equal): <br><br>
+            <div class="formula">
+                <strong><i>P</i> = 3<i>s</i></strong>
+            </div><br>
+            where <i>s</i> is the length of one side. <br><br>
+            For a <strong>right-angled triangle</strong>, if two sides are given, the third side can be found
+            using the <strong>Pythagorean theorem</strong> before calculating the perimeter: <br><br>
+            <div class="formula">
+                <strong><i>c</i><sup>2</sup> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup></strong>
+            </div>
+        </p><br>
+    </div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>My Calculator Space</h3>
+            <p>Your reliable tool for everyday calculations.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+            <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+            <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+    </div>
+</footer>
+<script src="perimeter.js"></script>
+<body>
+    
+</body>
+</html>

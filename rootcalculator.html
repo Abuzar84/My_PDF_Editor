@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Calculator</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="icon" href="root.webp" type="image/webp">
+        <link rel="stylesheet" href="rootcalculator.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+        crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <h1>My Calculator Space</h1>
+            </div>
+            <div class="button_container">
+                <div class="button_content">
+                    <button type="button" onclick="window.location.href='index.html';">Home</button>
+                    <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+                    <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+                    <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+                    <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+                    <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+                    <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+                    <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+                </div>                
+            </div>
+        </header>
+        <main>
+            <div class="conatainer_root">
+                <div class="con">
+                    <form>
+                        <h2>Root Calculator</h2><br>
+                        <input type="number" class="root_number" id="root_number" placeholder="Number">
+                        <input type="number" class="root_number_value" id="root_number_value" placeholder="Root"><br><br>
+                        <input type="reset" value="Clear">
+                        <input type="button" value="Calculate" onclick="rootcalc()">
+                        <div class="res_root" id="res_root"></div>
+                    </form>
+                </div>
+                <div class="para"><br>
+                    <section>
+                        <h2>What is a Root?</h2><br>
+                        <p>
+                            In mathematics, a <strong>root</strong> of a number refers 
+                            to a value that, when multiplied by itself a certain number 
+                            of times, results in the original number. The most common 
+                            roots are the <strong>square root</strong> and the <strong>
+                            cube root</strong>.
+                        </p><br>
+                    </section><hr>
+                    <section>
+                        <h2>Square Root</h2><br>
+                        <p>
+                            The square root of a number is a value that, when multiplied 
+                            by itself, equals the original number. It is represented by 
+                            the radical symbol <code>√</code>. For example:
+                        </p><br>
+                        <ul>
+                            <li>The square root of 9 is 3 because <code>3 × 3 = 9</code>.</li><br>
+                            <li>The square root of 16 is 4 because <code>4 × 4 = 16</code>.</li><br>
+                        </ul>
+                    </section><hr>
+                    <section>
+                        <h2>Cube Root</h2><br>
+                        <p>
+                            The cube root of a number is a value that, when used three times in a 
+                            multiplication, gives the original number. It is represented as 
+                            <code>∛</code>. For example:
+                        </p><br>
+                        <ul>
+                            <li>The cube root of 8 is 2 because <code>2 × 2 × 2 = 8</code>.</li><br>
+                            <li>The cube root of 27 is 3 because <code>3 × 3 × 3 = 27</code>.</li><br>
+                        </ul>
+                    </section><hr>
+                    <section>
+                        <h2>General Formula for Roots</h2><br>
+                        <p>
+                            The general formula for finding the <em>n<sup>th</sup> root</em> of a 
+                            number is written as:
+                        </p><br>
+                        <p>
+                            <code>n√x</code> or <code>x<sup>(1/n)</sup></code>
+                        </p><br>
+                        <p>
+                            For example:
+                        </p><br>
+                        <ul>
+                            <li>The 4th root of 16 is 2 because <code>2 × 2 × 2 × 2 = 16</code>.</li><br>
+                            <li>The 5th root of 32 is 2 because <code>2 × 2 × 2 × 2 × 2 = 32</code>.</li><br>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3>My Calculator Space</h3>
+                    <p>Your reliable tool for everyday calculations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+                    <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+                    <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+            </div>
+        </footer> 
+        <script src="rootcalculator.js"></script>       
+    </body>
+
+</html>

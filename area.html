@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="My Calculator Space - A collection of online calculators for various mathematical computations, including perimeter, surface area, and trigonometry.">
+        <meta name="keywords" content="online calculator, perimeter calculator, surface area calculator, trigonometry calculator, math tools, geometry calculations">
+        <meta name="author" content="My Calculator Space">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculators</title>
+    <link rel="icon" href="area.webp" type="image/webp">
+    <link rel="stylesheet" href="area.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9016296977652192"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>My Calculator Space</h1>
+        </div>
+        <div class="button_container">
+            <div class="button_content">
+                <button type="button" onclick="window.location.href='index.html';">Home</button>
+                <button type="button" onclick="window.location.href='calculator.html';">Calculator</button>
+                <button type="button" onclick="window.location.href='trignometry.html';">Trigonometry</button>
+                <button type="button" onclick="window.location.href='ExponentCalculator.html';">Exponent Calculator</button>
+                <button type="button" onclick="window.location.href='rootcalculator.html';">Root Calculator</button>
+                <button type="button" onclick="window.location.href='area.html';">Area Calculator</button>
+                <button type="button" onclick="window.location.href='perimeter.html';">Perimeter Calculator</button>
+                <button type="button" onclick="window.location.href='surfacearea.html';">Surface Area Calculator</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="surface_area_container">
+            <div class="calc_area">
+                <form name="circle">
+                    <label for="circle"><strong>Circle Area</strong></label><br><br>
+                    <input type="number" class="circle" id="circle" placeholder="Enter Radius of Circle">
+                    <select name="unit" id="unit_select">
+                        <option value="m" id="meter" selected>meter</option>
+                        <option value="m" id="millimeter">millimeter</option>
+                        <option value="km" id="kilometer">kilometer </option>
+                        <option value="cm" id="cm">cm</option>
+                        <option value="in" id="inch">inch</option>
+                        <option value="ft" id="foot">foot</option>
+                        <option value="yd" id="yard">yard</option>
+                        <option value="mi" id="mile">mile</option>
+                    </select><br><br>
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Calculate" onclick="areacircle()">
+                    <div id="res_area"></div>
+                </form>
+                <form name="sqaure">
+                    <label for="square"><strong>Square Area</strong></label><br><br>
+                    <input type="number" class="square_input" id="square_input" placeholder="Enter value of side">
+                    <select name="unit" id="unit_select_square">
+                        <option value="m" id="meter_square" selected>meter</option>
+                        <option value="m" id="millimeter_square">millimeter</option>
+                        <option value="km" id="kilometer_square">kilometer </option>
+                        <option value="cm" id="cm_square">cm</option>
+                        <option value="in" id="inch_square">inch</option>
+                        <option value="ft" id="foot_square">foot</option>
+                        <option value="yd" id="yard_square">yard</option>
+                        <option value="mi" id="mile_square">mile</option>
+                    </select><br><br>
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Calculate" onclick="areasquare()">
+                    <div id="res_area_square"></div>
+                </form>
+                <form name="rectangle">
+                    <label for="rectangle"><strong>Rectangle Area</strong></label><br><br>
+                    <input type="number" class="rectangle_length" id="rectangle_length" placeholder="Enter value of length"><br>
+                    <input type="number" class="rectangle_width" id="rectangle_width" placeholder="Enter value of width"><br><br>
+                    <strong>Select Unit</strong>
+                    <select name="unit" id="unit_select_rectangle">
+                        <option value="m" id="meter_rectangle" selected>meter</option>
+                        <option value="m" id="millimeter_rectangle">millimeter</option>
+                        <option value="km" id="kilometer_rectangle">kilometer </option>
+                        <option value="cm" id="cm_rectangle">cm</option>
+                        <option value="in" id="inch_rectangle">inch</option>
+                        <option value="ft" id="foot_rectangle">foot</option>
+                        <option value="yd" id="yard_rectangle">yard</option>
+                        <option value="mi" id="mile_rectangle">mile</option>
+                    </select><br><br>
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Calculate" onclick="arearectangle()">
+                    <div id="res_area_rectangle"></div>
+                </form>
+                <form name="triangle">
+                    <label for="triangle"><strong>Triangle Area</strong></label><br><br>
+                    <input type="number" class="triangle_height" id="triangle_height" placeholder="Enter value of base"><br>
+                    <input type="number" class="triangle_base" id="triangle_base" placeholder="Enter value of height"><br><br>
+                    <strong>Select Unit</strong>
+                    <select name="unit" id="unit_select_triangle">
+                        <option value="m" id="meter_triangle" selected>meter</option>
+                        <option value="m" id="millimeter_triangle">millimeter</option>
+                        <option value="km" id="kilometer_triangle">kilometer </option>
+                        <option value="cm" id="cm_triangle">cm</option>
+                        <option value="in" id="inch_triangle">inch</option>
+                        <option value="ft" id="foot_triangle">foot</option>
+                        <option value="yd" id="yard_triangle">yard</option>
+                        <option value="mi" id="mile_triangle">mile</option>
+                    </select><br><br>
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Calculate" onclick="areatriangle()">
+                    <div id="res_area_triangle"></div>
+                </form>
+            </div>
+            <div class="para_area">
+                <h1>Understanding Area in Mathematics</h1><br>
+                <p>
+                    In mathematics,<strong> area</strong> refers to the amount of space covered by a two-dimensional
+                    shape or surface. It is measured in square units, such as square meters (m<sup>2</sup>), square
+                    centimeters (cm<sup>2</sup>), or square inches (in<sup>2</sup>). The area of a shape can be calculated
+                    using specific formulas that depend on its geometry.
+                </p><br>
+                <hr>
+                <h2>Areas of Common Shapes</h2><br>
+                <p>
+                    <strong>1. Circle</strong><br><br>
+                    A circle is a round, closed shape where all points are equidistant from a central point, called the center.
+                    <br><br><strong>• Formula for Area:</strong><br><br>
+                    <strong><div class="formula">Area=π<i>r</i><Sup>2</Sup></div></strong><br><br>
+                    Here, <i>r</i> is the radius of the circle, and π (pi) is approximately 3.14159. <br><br>
+                    <strong>• Example:</strong>
+                    If the radius of a circle is 5 cm: <br><br>
+                    <div class="formula"><strong>Area = π(5)<sup>2</sup> = 25π = 78.54 cm<sup>2</sup></strong></div>
+                </p><br><br><hr><br>
+                <p>
+                    <strong>2. Square</strong><br><br>
+                    A square is a four-sided shape with all sides equal in length and all angles equal to 90&#176;.
+                    <br><br><strong>• Formula for Area:</strong><br><br>
+                    <div class="formula"><strong>Area = <i>a</i><sup>2</sup></strong></div><br>
+                    Here, <i>a</i> is the length of one side of the square. <br><br>
+                    <strong>• Example:</strong><br>
+                    If the side of a square is 4 m: <br><br>
+                    <div class="formula"><strong>Area = 4<sup>2</sup> = 16m<sup>2</sup></strong></div><br>
+                </p><hr><br>
+                <p>
+                    <strong>3. Rectangle</strong><br><br>
+                    A rectangle is a four-sided shape with opposite sides equal and all angles equal to 90&#176;. 
+                    <br><br><strong>• Formula for Area:</strong><br><br>
+                    <div class="formula"><strong>Area = <i>l</i> × <i>w</i></strong></div><br>
+                    Here, <i>l</i> is the length, and <i>w</i> is the width of the rectangle. <br><br>
+                    <strong>• Example:</strong><br>
+                    If the length of a rectangle is 8 m and the width is 3 m: <br><br>
+                    <div class="formula"><strong>Area = 8 × 3 = 24m<sup>2</sup></strong></div><br>
+                </p><br><hr><br>
+                <p>
+                    <strong>4. Triangle</strong><br><br>
+                    A triangle is a three-sided polygon. The area depends on its base and height. 
+                    <br><br><strong>• Formula for Area:</strong><br><br>
+                    <div class="formula"><strong>Area = <sup>1</sup>/<sub>2</sub> × <i>b</i> × <i>h</i></strong></div><br>
+                    Here, <i>b</i> is the base, and <i>h</i> is the height of the triangle. <br><br>
+                    <strong>• Example:</strong><br>
+                    If the base of a triangle is 6 cm and the height is 4 cm: <br><br>
+                    <div class="formula"><strong>Area = <sup>1</sup>/<sub>2</sub> × 6 × 4 = 12m<sup>2</sup></strong></div><br>
+                </p><br><hr><br>
+                <p>
+                    <strong>Practical Applications of Area</strong><br><br>
+                    Calculating area is essential in many real-life situations, such as: <br><br>
+                    • Determining the size of a plot of land. <br><br>  
+                    • Estimating the amount of paint needed for a wall. <br><br>
+                    • Designing patterns for fabric or flooring. <br><br>
+                </p>
+                <p>
+                    Understanding the concept of area and mastering the formulas for different
+                    shapes can help solve a variety of practical and mathematical problems!
+                </p><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>My Calculator Space</h3>
+                <p>Your reliable tool for everyday calculations.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/profile.php?id=61550129752081">Facebook</a>&ensp;
+                <a href="https://x.com/SayyedAbuz46392">Twitter</a>&ensp;
+                <a href="https://www.instagram.com/sayyedabuzar844/">Instagram</a>&ensp;
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 My Calculator Space. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="area.js"></script> 
+</body>
+</html>
